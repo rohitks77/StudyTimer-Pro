@@ -270,6 +270,12 @@ body {
 .preview-window img {
     width: 100%;
     display: block;
+    border-radius: 0 0 12px 12px;
+}
+
+.screenshot-main {
+    max-width: 100%;
+    height: auto;
 }
 
 .preview-fallback {
