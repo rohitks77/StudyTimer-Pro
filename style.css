@@ -267,15 +267,55 @@ body {
     background: var(--text-tertiary);
 }
 
-.preview-window img {
+.screenshot-container {
+    position: relative;
+    background: linear-gradient(135deg, #f6f8fb 0%, #e9ecef 100%);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot-main {
     width: 100%;
+    max-width: 100%;
+    height: auto;
     display: block;
     border-radius: 0 0 12px 12px;
 }
 
-.screenshot-main {
-    max-width: 100%;
-    height: auto;
+.screenshot-placeholder {
+    padding: 60px 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshot-placeholder img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.screenshot-placeholder p {
+    color: var(--text-secondary);
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.screenshot-placeholder span {
+    color: var(--text-tertiary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.screenshot-placeholder strong {
+    color: var(--primary);
+    font-weight: 700;
 }
 
 .preview-fallback {
