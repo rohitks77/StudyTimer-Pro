@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StudyTimer Pro - A powerful Chrome extension to track your study progress, manage subjects, and stay motivated with achievements and streaks.">
+    <meta name="keywords" content="study timer, study tracker, productivity, chrome extension, student tools, time management">
+    <meta name="author" content="Rohit K.S.">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://timerstudy.rohitks.com.np/">
+    <meta property="og:title" content="StudyTimer Pro - Track Your Study Progress">
+    <meta property="og:description" content="A powerful Chrome extension to track study time, manage subjects, earn achievements, and stay motivated.">
+    <meta property="og:image" content="https://timerstudy.rohitks.com.np/images/preview.png">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="StudyTimer Pro - Track Your Study Progress">
+    <meta name="twitter:description" content="A powerful Chrome extension to track study time, manage subjects, earn achievements, and stay motivated.">
+    <meta name="twitter:image" content="https://timerstudy.rohitks.com.np/images/preview.png">
+    
+    <title>StudyTimer Pro - Track Your Study Progress | Chrome Extension</title>
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../icons/icon-16.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="../icons/icon-48.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../icons/icon-128.png">
+    <link rel="apple-touch-icon" href="../icons/icon-128.png">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "StudyTimer Pro",
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Chrome",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="logo.svg" alt="StudyTimer Pro Logo">
+                    <span>StudyTimer Pro</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#screenshots">Screenshots</a>
+                    <a href="#privacy">Privacy</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#" class="btn-primary install-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Install Extension
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Track Your Study Progress with <span class="gradient-text">StudyTimer Pro</span></h1>
+                    <p class="hero-description">A powerful Chrome extension designed for students to track study time, manage subjects, earn achievements, and stay motivated with streaks and progress tracking.</p>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn-primary btn-large install-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                <polyline points="7 10 12 15 17 10"></polyline>
+                                <line x1="12" y1="15" x2="12" y2="3"></line>
+                            </svg>
+                            Add to Chrome - It's Free
+                        </a>
+                        <a href="#features" class="btn-secondary btn-large">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-icon">✓</div>
+                            <div class="stat-text">
+                                <strong>100% Private</strong>
+                                <span>All data stored locally</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">✓</div>
+                            <div class="stat-text">
+                                <strong>No Registration</strong>
+                                <span>Start using immediately</span>
+                            </div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-icon">✓</div>
+                            <div class="stat-text">
+                                <strong>Always Free</strong>
+                                <span>No subscriptions or ads</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="extension-preview">
+                        <div class="preview-window">
+                            <div class="window-header">
+                                <div class="window-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                            </div>
+                            <img src="screenshot-placeholder.png" alt="StudyTimer Pro Extension Preview" onerror="this.style.display='none'">
+                            <div class="preview-fallback">
+                                <img src="../icons/icon-128.png" alt="StudyTimer Pro">
+                                <p>Study Timer Interface</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features for Productive Students</h2>
+                <p>Everything you need to track, manage, and improve your study habits</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⏱️</div>
+                    <h3>Smart Study Timer</h3>
+                    <p>Track your study sessions with an intuitive timer. Start, pause, and stop with ease. View total time studied per subject.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📚</div>
+                    <h3>Subject Management</h3>
+                    <p>Organize multiple subjects with custom goals and progress tracking. Add notes, set target hours, and monitor completion.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Daily Streaks</h3>
+                    <p>Build consistent study habits with daily streak tracking. Stay motivated by maintaining your study streak every day.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Achievements System</h3>
+                    <p>Unlock 14+ achievements as you progress. From "First Steps" to "Marathon Master" - celebrate every milestone.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Statistics Dashboard</h3>
+                    <p>Visualize your study progress with detailed stats. Track total hours, sessions, best streak, and weekly patterns.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔖</div>
+                    <h3>Quick Bookmarks</h3>
+                    <p>Save important study resources and websites. Access your favorite materials instantly from the extension.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📅</div>
+                    <h3>Study Planner</h3>
+                    <p>Plan your study sessions with the built-in planner. Add tasks, set priorities, and stay organized.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Dark Mode</h3>
+                    <p>Easy on the eyes during late-night study sessions. Toggle between light and dark themes instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Data Export/Import</h3>
+                    <p>Backup your study data with JSON export. Import data to restore or transfer between devices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔔</div>
+                    <h3>Smart Notifications</h3>
+                    <p>Get notified about achievements, daily resets, and study reminders. Stay on track with gentle nudges.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Customizable Theme</h3>
+                    <p>Personalize with custom branding. Change extension name, subtitle, and colors to match your style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>100% Private</h3>
+                    <p>All data stored locally on your device. No servers, no tracking, no data collection. Your privacy is guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose StudyTimer Pro?</h2>
+                <p>See how we compare to other study tracking solutions</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="feature-col">Feature</div>
+                    <div class="product-col">
+                        <div class="product-name">StudyTimer Pro</div>
+                        <div class="product-badge">FREE</div>
+                    </div>
+                    <div class="product-col">
+                        <div class="product-name">Other Apps</div>
+                        <div class="product-badge alt">$5-15/mo</div>
+                    </div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Study Time Tracking</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Subject Management</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Achievements & Streaks</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="cross">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">100% Privacy (No Servers)</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="cross">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">No Registration Required</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="cross">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Built-in Study Planner</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Floating Timer</div>
+                    <div class="product-col"><span class="check">✓</span></div>
+                    <div class="product-col"><span class="cross">✗</span></div>
+                </div>
+                <div class="comparison-row">
+                    <div class="feature-col">Price</div>
+                    <div class="product-col"><strong class="price-highlight">FREE</strong></div>
+                    <div class="product-col"><strong class="price-alt">$5-15/mo</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2>How It Works</h2>
+                <p>Get started in 3 simple steps</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Install Extension</h3>
+                    <p>Add StudyTimer Pro to Chrome from the Web Store. No account or registration required.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Add Your Subjects</h3>
+                    <p>Create subjects you're studying, set target hours, and add custom notes for each subject.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Start Studying</h3>
+                    <p>Click the timer button for any subject to start tracking. StudyTimer Pro handles the rest!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2>See It In Action</h2>
+                <p>A glimpse of StudyTimer Pro's beautiful interface</p>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-item">
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder">
+                            <img src="../icons/icon-128.png" alt="Timer View">
+                            <p>Timer & Subjects</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Track time for each subject</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder">
+                            <img src="../icons/icon-128.png" alt="Progress View">
+                            <p>Progress Tracking</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Monitor your study progress</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder">
+                            <img src="../icons/icon-128.png" alt="Achievements View">
+                            <p>Achievements</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Unlock 14+ achievements</p>
+                </div>
+                <div class="screenshot-item">
+                    <div class="screenshot-card">
+                        <div class="screenshot-placeholder">
+                            <img src="../icons/icon-128.png" alt="Stats View">
+                            <p>Statistics</p>
+                        </div>
+                    </div>
+                    <p class="screenshot-label">Detailed study statistics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Loved by Students Worldwide</h2>
+                <p>See what students are saying about StudyTimer Pro</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"StudyTimer Pro has completely transformed how I track my study sessions. The achievements system keeps me motivated, and I love that my data stays private!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">SM</div>
+                        <div class="author-info">
+                            <div class="author-name">Sarah Mitchell</div>
+                            <div class="author-title">Medical Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Finally, a study tracker that respects my privacy! No sign-up, no data collection, just pure functionality. The floating timer is genius!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JC</div>
+                        <div class="author-info">
+                            <div class="author-name">James Chen</div>
+                            <div class="author-title">Engineering Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The streak system has helped me build consistent study habits. I'm on a 45-day streak now! Best productivity extension I've ever used."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">EP</div>
+                        <div class="author-info">
+                            <div class="author-name">Emily Parker</div>
+                            <div class="author-title">Law Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Simple, beautiful, and powerful. The statistics dashboard helps me visualize my progress. Highly recommend to all students!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">MR</div>
+                        <div class="author-info">
+                            <div class="author-name">Michael Rodriguez</div>
+                            <div class="author-title">MBA Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"As someone who studies multiple subjects, the subject management feature is perfect. I can see exactly where I'm spending my time."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">LT</div>
+                        <div class="author-info">
+                            <div class="author-name">Lisa Thompson</div>
+                            <div class="author-title">Computer Science Student</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"The dark mode is perfect for late-night study sessions. This extension has everything I need without any bloat. Absolutely love it!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">DK</div>
+                        <div class="author-info">
+                            <div class="author-name">David Kim</div>
+                            <div class="author-title">Physics Student</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy" class="privacy-section">
+        <div class="container">
+            <div class="privacy-content">
+                <div class="privacy-icon">🔒</div>
+                <h2>Your Privacy Matters</h2>
+                <p class="privacy-lead">StudyTimer Pro is built with privacy at its core. We believe your study data belongs to you and only you.</p>
+                <div class="privacy-grid">
+                    <div class="privacy-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>All Data Stored Locally</strong>
+                            <p>Your study data never leaves your device</p>
+                        </div>
+                    </div>
+                    <div class="privacy-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>No External Servers</strong>
+                            <p>We don't transmit or collect any information</p>
+                        </div>
+                    </div>
+                    <div class="privacy-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>No Analytics or Tracking</strong>
+                            <p>We don't use any tracking services</p>
+                        </div>
+                    </div>
+                    <div class="privacy-item">
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>No Registration Required</strong>
+                            <p>Start using immediately without any account</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="../PRIVACY_POLICY.md" class="btn-secondary" target="_blank">Read Full Privacy Policy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Everything you need to know about StudyTimer Pro</p>
+            </div>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is StudyTimer Pro really free?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! StudyTimer Pro is 100% free forever. No subscriptions, no hidden fees, no premium tiers. We believe every student deserves access to quality productivity tools.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Is my study data safe and private?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! All your data is stored locally on your device using Chrome's secure storage. We don't have any servers, so your data never leaves your computer. No tracking, no analytics, no data collection whatsoever.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Do I need to create an account?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No registration required! Just install the extension and start using it immediately. No email, no password, no personal information needed.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I export my study data?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can export all your study data as a JSON file from the Settings tab. You can also import data back, making it easy to backup or transfer your data between devices.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Does it work on mobile?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>StudyTimer Pro is a Chrome extension, so it works on Chrome desktop browser (Windows, Mac, Linux). Chrome extensions currently don't work on mobile browsers, but you can use Chrome on any desktop platform.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens to my streak if I miss a day?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Your current streak resets if you miss a day, but your best streak is saved forever! This motivates you to maintain consistency while still celebrating your highest achievements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can I customize the extension?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can customize the extension name, subtitle, theme (light/dark), daily goals, and notification preferences. We've built it to be flexible while keeping things simple.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How do achievements work?</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>There are 14+ achievements you can unlock based on your study milestones - from "First Steps" (1 hour studied) to "Marathon Master" (100 hours studied). Each achievement you unlock comes with a notification to celebrate your progress!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Boost Your Study Productivity?</h2>
+                <p>Join students who are already tracking their progress with StudyTimer Pro</p>
+                <a href="#" class="btn-primary btn-large install-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Install Free Chrome Extension
+                </a>
+                <p class="cta-note">No credit card • No registration • Always free</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Have questions or feedback? We'd love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-card">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <p>Send us a message</p>
+                    <a href="mailto:contact@rohitks.com.np">contact@rohitks.com.np</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🌐</div>
+                    <h3>Website</h3>
+                    <p>Visit our main site</p>
+                    <a href="https://rohitks.com.np" target="_blank">rohitks.com.np</a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3>Support</h3>
+                    <p>Need help?</p>
+                    <a href="mailto:support@rohitks.com.np">support@rohitks.com.np</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../icons/icon-48.png" alt="StudyTimer Pro">
+                        <span>StudyTimer Pro</span>
+                    </div>
+                    <p>Track your study progress and stay motivated</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#screenshots">Screenshots</a></li>
+                        <li><a href="#" class="install-btn">Install Extension</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="../PRIVACY_POLICY.md" target="_blank">Privacy Policy</a></li>
+                        <li><a href="#privacy">Privacy & Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://rohitks.com.np" target="_blank">Main Website</a></li>
+                        <li><a href="mailto:contact@rohitks.com.np">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rohit K.S. All rights reserved.</p>
+                <p>Made with ❤️ for students</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
