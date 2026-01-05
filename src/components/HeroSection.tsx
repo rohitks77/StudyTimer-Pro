@@ -62,7 +62,7 @@ const HeroSection = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="xl" asChild>
                 <a
-                  href="https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea"
+                  href="https://chromewebstore.google.com/detail/studytimer-pro/keecjmdcfikcjgoflbhchficlmmkhmco"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
