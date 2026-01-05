@@ -60,7 +60,7 @@ const CTASection = () => {
             {/* CTA Button */}
             <Button variant="hero" size="lg" className="w-full sm:w-auto text-sm sm:text-base md:text-lg px-6 sm:px-8 md:px-10 h-12 sm:h-14" asChild>
               <a
-                href="https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea"
+                href="https://chromewebstore.google.com/detail/studytimer-pro/keecjmdcfikcjgoflbhchficlmmkhmco"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex"
