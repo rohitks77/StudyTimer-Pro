@@ -95,7 +95,7 @@ const Navbar = () => {
             <ThemeToggle />
             <Button variant="hero" size="lg" asChild>
               <a
-                href="https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea"
+                href="https://chromewebstore.google.com/detail/studytimer-pro/keecjmdcfikcjgoflbhchficlmmkhmco"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -160,7 +160,7 @@ const Navbar = () => {
               <div className="pt-6">
                 <Button variant="hero" size="lg" className="w-full" asChild>
                   <a
-                    href="https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea"
+                    href="https://chromewebstore.google.com/detail/studytimer-pro/keecjmdcfikcjgoflbhchficlmmkhmco"
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMobileMenuOpen(false)}
