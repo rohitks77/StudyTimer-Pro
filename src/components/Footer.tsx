@@ -11,7 +11,7 @@ const Footer = () => {
       { label: "FAQ", href: "#faq" },
     ],
     resources: [
-      { label: "Chrome Web Store", href: "https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea" },
+      { label: "Chrome Web Store", href: "https://chromewebstore.google.com/detail/studytimer-pro/keecjmdcfikcjgoflbhchficlmmkhmco" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "#terms" },
       { label: "Support", href: "#support" },
