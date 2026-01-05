@@ -99,7 +99,7 @@ export const APP_CONFIG = {
     ],
     ctaButton: {
       text: "Add to Chrome — It's Free",
-      url: "https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea",
+      url: "https://chromewebstore.google.com/detail/keecjmdcfikcjgoflbhchficlmmkhmco",
     },
     disclaimer: "No credit card required · No account needed · Works offline",
   },
@@ -222,4 +222,5 @@ export const APP_CONFIG = {
 };
 
 export default APP_CONFIG;
+
 
