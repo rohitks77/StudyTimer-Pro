@@ -16,7 +16,7 @@ export const APP_CONFIG = {
   // URLS & LINKS
   // ============================================
   urls: {
-    chromeWebStore: "https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea",
+    chromeWebStore: "https://chromewebstore.google.com/detail/keecjmdcfikcjgoflbhchficlmmkhmco",
     website: "https://studytimer.rohitks.com.np/",
     contactWebsite: "https://rohitks.com.np",
     github: "#",
@@ -42,7 +42,7 @@ export const APP_CONFIG = {
     ],
     ctaButton: {
       text: "Add to Chrome — It's Free",
-      url: "https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea",
+      url: "https://chromewebstore.google.com/detail/keecjmdcfikcjgoflbhchficlmmkhmco",
     },
     secondaryButton: {
       text: "Learn More",
@@ -72,7 +72,7 @@ export const APP_CONFIG = {
       { label: "FAQ", href: "#faq" },
     ],
     resourceLinks: [
-      { label: "Chrome Web Store", href: "https://chromewebstore.google.com/detail/studytimer-pro/gfncbiglcahdcimbfkndkfdcopkmahea" },
+      { label: "Chrome Web Store", href: "https://chromewebstore.google.com/detail/keecjmdcfikcjgoflbhchficlmmkhmco" },
       { label: "Privacy Policy", href: "/privacy-policy" },
       { label: "Terms of Service", href: "#terms" },
       { label: "Support", href: "#support" },
@@ -222,3 +222,4 @@ export const APP_CONFIG = {
 };
 
 export default APP_CONFIG;
+
